@@ -65,5 +65,3 @@ class Parte:
 
     def cerrar(self):
         self.ventanas.destroy()
-
-Parte()
