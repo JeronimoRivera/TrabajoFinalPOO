@@ -1,5 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
+
+from interfaz.entrada import Parte
 from interfaz.registrar import Registrar
 
 
@@ -54,9 +56,16 @@ class Bienvenida:
         elif len(self.barra)>0 and len(self.barra)<4:
             messagebox.showerror('Error','El nombre de usuario debe ser de mas de 4 caracteres')
 
+
+
     def registrar(self):
         self.ventana.destroy()
         Registrar()
+
+    def entrada(self):
+        self.ventana.destroy()
+        Parte()
+
 
 
 Bienvenida()
