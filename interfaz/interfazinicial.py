@@ -39,7 +39,7 @@ class Bienvenida:
         # botones
 
         self.boton1 = Button(self.ventana, text='Ingresar')
-        self.boton1.config(font=('Arial',10), command=self.entrada)
+        self.boton1.config(font=('Arial',10), command=self.sesion)
         self.boton1.place(x=373, y=510)
 
         self.boton = Button(self.ventana, text='Registrarme')
@@ -49,7 +49,7 @@ class Bienvenida:
         self.ventana.mainloop()
 
 
-    def entrada(self):
+    def sesion (self):
         self.barra = self.nombre.get()
         if not self.nombre.get():
             messagebox.showerror('Error','Colocar el nombre de usuario')
