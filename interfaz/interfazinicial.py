@@ -42,6 +42,8 @@ class Bienvenida:
         self.boton1.config(font=('Arial',10), command=self.sesion)
         self.boton1.place(x=373, y=510)
 
+
+
         self.boton = Button(self.ventana, text='Registrarme')
         self.boton.config(font=('Arial', 11), command=self.registrar)
         self.boton.place(x=358, y=605)
@@ -55,6 +57,8 @@ class Bienvenida:
             messagebox.showerror('Error','Colocar el nombre de usuario')
         elif len(self.barra)>0 and len(self.barra)<4:
             messagebox.showerror('Error','El nombre de usuario debe ser de mas de 4 caracteres')
+        else:
+            self.entrada()
 
 
 
