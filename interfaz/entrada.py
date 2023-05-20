@@ -32,7 +32,7 @@ class Parte:
         self.boton3 = Button(self.ventanas, text='Ver carrito')
         self.boton3.config(font=('Arial', 10), width=23, height=2)
         self.boton3.place(x=530, y=460)
-    #----------------------------------------------------------------------------
+    #-----------------------------------------------------------------------------
         self.boton4 = Button(self.ventanas, text='Agregar moto al carrito')
         self.boton4.config(font=('Arial', 10), width=23, height=2)
         self.boton4.place(x=310, y=540)
