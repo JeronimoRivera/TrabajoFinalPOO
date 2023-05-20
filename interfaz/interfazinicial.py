@@ -56,7 +56,7 @@ class Bienvenida:
         if not self.nombre.get():
             messagebox.showerror('Error','Colocar el nombre de usuario')
         elif len(self.barra)>0 and len(self.barra)<4:
-            messagebox.showerror('Error','El nombre de usuario debe ser de mas de 4 caracteres')
+            messagebox.showerror('Error','El nombre de usuario debe ser de mas de 3 caracteres')
         else:
             self.entrada()
 
